@@ -1,25 +1,31 @@
 {
-  "name": "rainorshine",
-  "version": "1.0.0",
-  "description": "Weather api",
-  "main": "script.js",
-  "dependencies": {
-    "moment": "^2.29.1",
-    "react-icons": "^4.2.0"
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "14.x"
   },
-  "devDependencies": {},
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "got": "^11.3.0",
+    "tape": "^4.7.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fariba-Dk/rain-or-shines.git"
+    "url": "https://github.com/heroku/node-js-getting-started"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fariba-Dk/rain-or-shines/issues"
-  },
-  "homepage": "https://github.com/fariba-Dk/rain-or-shines#readme"
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
