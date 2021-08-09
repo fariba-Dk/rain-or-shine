@@ -1,22 +1,30 @@
-~~~ heroku ~~~
 
-Install the Heroku CLI
-Download and install the Heroku CLI.
+~~~~ git repo address:   https://github.com/fariba-Dk/rain-or-shine.git   ~~~
+
+~~~ heroku ~~~Install the Heroku CLI
+--if already on git h
+Download and install  the Heroku CLI.
 
 If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
 
 $ heroku login
-Clone the repository
-Use Git to clone funwear's source code to your local machine.
+Create a new Git repository
+Initialize a git repository in a new or existing directory
 
-$ heroku git:clone -a funwear
-$ cd funwear
-Deploy your changes
-Make some changes to the code you just cloned and deploy them to Heroku using Git.
+$ cd my-project/
+$ git init
+$ heroku git:remote -a rain-or-shines
+Deploy your application
+Commit your code to the repository and deploy it to Heroku using Git.
 
 $ git add .
 $ git commit -am "make it better"
 $ git push heroku master
+You can now change your main deploy branch from "master" to "main" for both manual and automatic deploys, please follow the instructions here.
+Existing Git repository
+For existing repositories, simply add the heroku remote
+
+$ heroku git:remote -a rain-or-shines
 
 ~~~~~~~~~~~
 https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
