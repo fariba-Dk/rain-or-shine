@@ -1,7 +1,9 @@
 
 ~~~~ git repo address:   https://github.com/fariba-Dk/rain-or-shine.git   ~~~
 
-~~~ heroku ~~~Install the Heroku CLI
+~~~ heroku    https://git.heroku.com/rain-or-shines.git
+
+~~~Install the Heroku CLI
 --if already on git h
 Download and install  the Heroku CLI.
 
@@ -25,7 +27,7 @@ Existing Git repository
 For existing repositories, simply add the heroku remote
 
 $ heroku git:remote -a rain-or-shines
-
+git push heroku <branchname>:main
 ~~~~~~~~~~~
 https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
 
@@ -52,3 +54,13 @@ using moment to get time
    </body>
 
 </html>
+
+
+
+In case it helps someone :
+
+I had a blank repo with no master branch to unprotect (in Gitlab) so before running git push -u origin --all
+
+I had to run git push -u origin master first,
+unprotect the master branch temporarily
+push the rest (--all & --tags)

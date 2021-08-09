@@ -1,4 +1,9 @@
-console.log('fariba');
+
+
+app.addEventListener(port, function (){
+  console.log('Server is running successfully')
+})
+
 
 let weather = {
   apiKey: '74e34e7e5ed57fea63f9a7e20c164a69',
@@ -49,54 +54,3 @@ document
   });
 weather.fetchWeather('Paris');
 
-//Notes
-/*api.openweathermap.org/data/2.5/weather?q=Denver&appid=74e34e7e5ed57fea63f9a7e20c164a69
-  this is what we get in JSON format
-  // 20210804195212
-// https://api.openweathermap.org/data/2.5/weather?q=Denver&appid=74e34e7e5ed57fea63f9a7e20c164a69
-
-
-{
-  "coord": {
-    "lon": -104.9847,
-    "lat": 39.7392
-  },
-  "weather": [
-    {
-      "id": 803,
-      "main": "Clouds",
-      "description": "broken clouds",
-      "icon": "04n"
-    }
-  ],
-  "base": "stations",
-  "main": {
-    "temp": 295.87,
-    "feels_like": 295.27,
-    "temp_min": 291.14,
-    "temp_max": 299.74,
-    "pressure": 1015,
-    "humidity": 41
-  },
-  "visibility": 10000,
-  "wind": {
-    "speed": 3.34,
-    "deg": 73,
-    "gust": 5.14
-  },
-  "clouds": {
-    "all": 62
-  },
-  "dt": 1628131477,
-  "sys": {
-    "type": 2,
-    "id": 2004334,
-    "country": "US",
-    "sunrise": 1628078519,
-    "sunset": 1628129398
-  },
-  "timezone": -21600,
-  "id": 5419384,
-  "name": "Denver",
-  "cod": 200
-}*/
