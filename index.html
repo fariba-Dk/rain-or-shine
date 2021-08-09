@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rain🌈shine</title>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./new.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <script
-      type="text/JavaScript"
-      src="https://MomentJS.com/downloads/moment.js"
-    ></script>
-
-    <script src="./script.js" defer></script>
+     <script src="./script.js" defer></script>
   </head>
 
   <body>
     <div class="card">
       <!-- search bar -->
       <div class="search">
-        <input type="text" class="search-bar" placeholder="Search"/>
+        <input type="text" class="search-bar" placeholder="Search">
         <!-- Scalable Vector Graphics (SVG) / from react  -->
         <button class="button">
           <svg
@@ -60,30 +57,10 @@
       </div>
       <!-- other fields element for weather -->
       <div class="weather loading">
-        <h2 class="city" >Paris</h2>
-        <hr lwngth:"50%">
-        <h3>Local Time: </h3>
-        <div style="font-size: 20px" padding:10px; id="todaysdate"></div>
-        <script type="text/JavaScript">
-          var a = moment().toString();
-          document.getElementById("todaysdate").innerHTML = a;
-        </script>
-        <!-- <div id="clock">8:23PM</div> -->
-        <script src="moment.js"></script>
-        <script>
-          moment().format();
-        </script>
-
-        <!--    //time <input type="datetime-local" id="search"
-       name="meeting-time" value="2018-06-12T19:30"
-       min="2018-06-07T00:00" max="2018-06-14T00:00"> -->
-        <h2 class="temp"></h2>
+        <h2 class="city">Paris</h2>
+        <h1 class="temp">51°F</h1>
         <div class="flex">
-          <img
-            src="https://openweathermap.org/img/wn/04n.png"
-            alt=""
-            class="icon"
-          />
+         <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
           <div class="description"></div>
           <div class="humidity"></div>
           <div class="wind"></div>
@@ -91,4 +68,5 @@
       </div>
     </div>
   </body>
+
 </html>

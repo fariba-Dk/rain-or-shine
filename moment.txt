@@ -1,5 +1,5 @@
 
-~~~~ git repo address:   https://github.com/fariba-Dk/rain-or-shine.git   ~~~
+~~~~ git repo address:   https://github.com/fariba-Dk/rain-or-shines.git   ~~~
 
 ~~~ heroku    https://git.heroku.com/rain-or-shines.git
 
