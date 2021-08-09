@@ -26,7 +26,8 @@ let weather = {
     document.querySelector('.temp').innerText = Math.round(temp) + '°F';
     document.querySelector('.humidity').innerText =
       'humidity: ' + humidity + '%';
-    document.querySelector('.wind').innerText = 'Wind speed: ' + Math.round(speed) + ' m/h';
+    document.querySelector('.wind').innerText =
+      'Wind speed: ' + Math.round(speed) + ' m/h';
     document.querySelector('.weather').classList.remove('loading');
     document.body.style.backgroundImage =
       "url('https://source.unsplash.com/1600x900/?" + name + "')"; //IF YOU WANTED THAT PARTICULAR CITY
@@ -46,7 +47,7 @@ document
       weather.search();
     }
   });
-weather.fetchWeather('Venice');
+weather.fetchWeather('Paris');
 
 //Notes
 /*api.openweathermap.org/data/2.5/weather?q=Denver&appid=74e34e7e5ed57fea63f9a7e20c164a69
