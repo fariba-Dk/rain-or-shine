@@ -1,3 +1,14 @@
+// const express = require('express');
+// const path = require('path');
+// const PORT = process.env.PORT || 5000;
+
+// express()
+//   .use(express.static(path.join(__dirname, 'public')))
+//   .set('views', path.join(__dirname, 'views'))
+//   .set('view engine', 'ejs')
+//   .get('/', (req, res) => res.render('pages/index'))
+//   .listen(PORT, () => console.log(`Listening on ${PORT}`));
+
 let weather = {
   apiKey: '74e34e7e5ed57fea63f9a7e20c164a69',
   fetchWeather: function (city) {
@@ -33,15 +44,15 @@ let weather = {
     this.fetchWeather(document.querySelector('.search-bar').value);
   },
 };
-document.querySelector('.search button').addEventListener('click', function () {
+  document.querySelector('.search button').addEventListener('click', function () {
   weather.search();
 });
 
-document
+  document
   .querySelector('.search-bar')
   .addEventListener('keyup', function (event) {
     if (event.key == 'Enter') {
       weather.search();
     }
   });
-weather.fetchWeather('New York');
+weather.fetchWeather('London');
