@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "nodemon script.js"
+    "start": "node server"
   },
   "dependencies": {
     "ejs": "^3.1.5",
